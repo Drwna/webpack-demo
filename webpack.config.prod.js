@@ -1,8 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require('path');
-
 const base = require('./webpack.config.base.js')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   ...base,
