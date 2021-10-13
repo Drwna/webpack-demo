@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && webpack",
+    "build": "rm -rf dist && webpack --config webpack.config.prod.js",
     "start": "webpack serve --open"
   },
   "license": "MIT",
