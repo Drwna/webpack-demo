@@ -16,7 +16,6 @@ button.innerHTML = '懒加载'
 button.onclick = () => {
     const promise = import('./lazy.js')
     promise.then((module) => {
-       const fn = module.default()
-       console.log(fn);
+       module.default()
     }, () => {})
 }
