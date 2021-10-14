@@ -12,5 +12,20 @@ module.exports = {
             title: 'My App',
             template: 'src/assets/index.html',
         })
-    ]
+    ],
+    module: {
+        rules: [{
+            test: /\.scss$/i,
+            use: [
+                "style-loader",
+                "css-loader",
+                {
+                    loader: "sass-loader",
+                    options: {
+                        implementation: require("dart-sass")
+                    }
+                }
+            ]
+        }]
+    }
 };
