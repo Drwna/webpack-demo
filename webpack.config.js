@@ -8,10 +8,12 @@ module.exports = {
     static: './dist',
   },
   module: {
-    rules: [{
+    rules: [
       ...base.module.rules,
-      test: /\.css$/i,
-      use: ["style-loader", "css-loader"], //生成 style 标签
-    }, ],
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"], //生成 style 标签
+      },
+    ],
   },
 };

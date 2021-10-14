@@ -12,9 +12,12 @@ module.exports = {
     }),
   ],
   module: {
-    rules: [{
-      test: /\.css$/i,
-      use: [MiniCssExtractPlugin.loader, "css-loader"], // 抽成 css 文件
-    }]
+    rules: [
+      ...base.module.rules,
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      }
+    ]
   }
 };
