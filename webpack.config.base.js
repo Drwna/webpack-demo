@@ -9,7 +9,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'My App',
+            title: 'Webpack Demo',
             template: 'src/assets/index.html',
         })
     ],
