@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && webpack --config webpack.config.prod.js",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "push": "git push gitee && git push github"
   },
   "devDependencies": {
     "css-loader": "^6.4.0",
