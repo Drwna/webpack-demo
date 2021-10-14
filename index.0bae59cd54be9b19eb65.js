@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_demo_1=self.webpackChunkwebpack_demo_1||[]).push([[958],{958:(e,c,n)=>{function a(){console.log("i am lazy load");const e=document.createElement("div");e.innerText="哈哈哈哈哈",document.querySelector("#app5").appendChild(e)}n.r(c),n.d(c,{default:()=>a})}}]);
