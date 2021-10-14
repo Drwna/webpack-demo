@@ -14,8 +14,7 @@ module.exports = {
         })
     ],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.less$/i,
                 use: ["style-loader", "css-loader", "less-loader"]
             },
@@ -39,7 +38,11 @@ module.exports = {
                     "css-loader",
                     "stylus-loader"
                 ]
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: ["file-loader"]
+            },
         ]
     }
 };
